@@ -36,5 +36,7 @@ namespace Lab1
         }
 
         public abstract void Salutation();
+        // Salutation should not be virtual because every employee has a specialization (Manager, Architect, ...) so there is no reason for an implementation in the base class
+
     }
 }
