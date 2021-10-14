@@ -1,5 +1,4 @@
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 D:\Repos\.Net\Lab2\Lab2\bin\Debug\net5.0\Lab2.exe
 D:\Repos\.Net\Lab2\Lab2\bin\Debug\net5.0\Lab2.deps.json
 D:\Repos\.Net\Lab2\Lab2\bin\Debug\net5.0\Lab2.runtimeconfig.json
@@ -16,7 +15,6 @@ D:\Repos\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.dll
 D:\Repos\.Net\Lab2\Lab2\obj\Debug\net5.0\ref\Lab2.dll
 D:\Repos\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.pdb
 D:\Repos\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.genruntimeconfig.cache
-=======
 =======
 >>>>>>> Stashed changes
 C:\Users\todlu\Documents\GitHub\.Net\Lab2\Lab2\bin\Debug\net5.0\Lab2.exe
@@ -35,7 +33,3 @@ C:\Users\todlu\Documents\GitHub\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.dll
 C:\Users\todlu\Documents\GitHub\.Net\Lab2\Lab2\obj\Debug\net5.0\ref\Lab2.dll
 C:\Users\todlu\Documents\GitHub\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.pdb
 C:\Users\todlu\Documents\GitHub\.Net\Lab2\Lab2\obj\Debug\net5.0\Lab2.genruntimeconfig.cache
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
