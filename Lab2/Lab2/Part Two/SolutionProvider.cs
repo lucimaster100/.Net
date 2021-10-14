@@ -12,7 +12,6 @@ namespace Lab2.Part_Two
         {
             FootballFileParser parser = new FootballFileParser(filePath);
             this._teamResultsList = parser.ParseTeamResults();
-
         }
 
         public List<(TeamResults,int)> GoalDifferenceRanking()
