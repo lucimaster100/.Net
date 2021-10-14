@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Lab2.Part_Two;
 
 namespace Lab2
 {
@@ -6,7 +8,9 @@ namespace Lab2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        //SolutionProvider solution = new SolutionProvider("D:\\Repos\\.Net\\Lab2\\Lab2\\Part Two\\football.dat");
+        SolutionProvider solution = new SolutionProvider("..\\..\\..\\Part Two\\football.dat");
+            solution.ShowRankingByGoalDifference();
         }
     }
 }

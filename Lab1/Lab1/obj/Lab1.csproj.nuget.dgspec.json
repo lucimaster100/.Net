@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\todlu\\Documents\\GitHub\\.Net\\Lab1\\Lab1\\Lab1.csproj": {}
+    "D:\\Repos\\.Net\\Lab1\\Lab1\\Lab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\todlu\\Documents\\GitHub\\.Net\\Lab1\\Lab1\\Lab1.csproj": {
+    "D:\\Repos\\.Net\\Lab1\\Lab1\\Lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\todlu\\Documents\\GitHub\\.Net\\Lab1\\Lab1\\Lab1.csproj",
+        "projectUniqueName": "D:\\Repos\\.Net\\Lab1\\Lab1\\Lab1.csproj",
         "projectName": "Lab1",
-        "projectPath": "C:\\Users\\todlu\\Documents\\GitHub\\.Net\\Lab1\\Lab1\\Lab1.csproj",
-        "packagesPath": "C:\\Users\\todlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\todlu\\Documents\\GitHub\\.Net\\Lab1\\Lab1\\obj\\",
+        "projectPath": "D:\\Repos\\.Net\\Lab1\\Lab1\\Lab1.csproj",
+        "packagesPath": "C:\\Users\\farta\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\.Net\\Lab1\\Lab1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\todlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
