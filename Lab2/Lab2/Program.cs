@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Lab2.Part_Two;
+
+
 
 
 namespace Lab2
@@ -14,7 +17,7 @@ namespace Lab2
             List<Weather> weatherList=new List<Weather>();
             String[] result;
   
-// Read the file and display it line by line.  
+
             foreach (string line in System.IO.File.ReadLines(@"weather.dat")) 
             {
                 counter++;
@@ -63,9 +66,11 @@ namespace Lab2
             Console.Write(day1);
             Console.Write(" spread: ");
             Console.WriteLine(min);
+
             //SolutionProvider solution = new SolutionProvider("D:\\Repos\\.Net\\Lab2\\Lab2\\Part Two\\football.dat");
             SolutionProvider solution = new SolutionProvider("..\\..\\..\\Part Two\\football.dat");
             solution.ShowRankingByGoalDifference();
+
         }
     }
 }
