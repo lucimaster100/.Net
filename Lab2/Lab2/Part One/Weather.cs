@@ -138,11 +138,7 @@ namespace Lab2
             get => _avSlp;
             set => _avSlp = value;
         }
-
-        public static void print()
-        {
-            Console.WriteLine("yeet!");
-        }
+        
         
     }
 }
