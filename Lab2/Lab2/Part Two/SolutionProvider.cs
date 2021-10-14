@@ -6,7 +6,7 @@ namespace Lab2.Part_Two
     public class SolutionProvider
     {
         private readonly List<TeamResults> _teamResultsList;
-        
+
 
         public SolutionProvider(string filePath)
         {
@@ -14,13 +14,13 @@ namespace Lab2.Part_Two
             this._teamResultsList = parser.ParseTeamResults();
         }
 
-        public List<(TeamResults,int)> GoalDifferenceRanking()
+        public List<(TeamResults, int)> GoalDifferenceRanking()
         {
-            List <(TeamResults, int)> resultList = new List<(TeamResults, int)>();
+            List<(TeamResults, int)> resultList = new List<(TeamResults, int)>();
             foreach (TeamResults result in this._teamResultsList)
             {
                 resultList.Add((result, Math.Abs(result.GoalsFor - result.GoalsAgainst)));
-                
+
             }
             //sort the list of tuples by the second value
             resultList.Sort((x, y) => x.Item2.CompareTo(y.Item2));
@@ -44,7 +44,7 @@ namespace Lab2.Part_Two
         public void GetTeamWithSmallestDifference()
         {
             List<(TeamResults, int)> list = GoalDifferenceRanking();
-            Console.WriteLine("The team that has the smallest difference in 'for' and 'against' goals: " + list[0].Item1.Team); 
+            Console.WriteLine("The team that has the smallest difference in 'for' and 'against' goals: " + list[0].Item1.Team);
         }
 
     }

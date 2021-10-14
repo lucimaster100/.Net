@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Lab2
 {
-    public class SolutionOne
+    public class SolutionWeather
     {
         public readonly List<Weather> _wearherInfo;
-        public SolutionOne(string filePath)
+        public SolutionWeather(string filePath)
         {
             WeatherFileParser parser = new WeatherFileParser(filePath);
             this._wearherInfo = parser.ParseWeatherInfo();
         }
 
-        public void ShowSmallesWeatherDifference()
+        public void ShowSmallestWeatherDifference()
         {
             int day, maxTemp, minTemp, day1=-1, min=Int32.MaxValue;
             

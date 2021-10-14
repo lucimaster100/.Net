@@ -1,42 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Lab2.Part_Two;
 
 namespace Lab2.Part_Three
 {
-    public class FileParser
+    public static class FileParser
     {
-        private readonly string _filePath;
-
-        public FileParser(string filePath)
+        private static string _filePath;
+        private static Type _type;
+        private static Data CreateObject(string[] arguments)
         {
-            this._filePath = filePath;
+            Data x = (Data)Activator.CreateInstance(_type);
+            x.SetParameters(arguments);
+            return x;
         }
 
-        public List<TeamResults> ParseTeamResults()
+        public static List<Data> ParseFile(string filePath, Type type)
         {
-            StreamReader reader = File.OpenText(this._filePath);
+            _filePath = filePath;
+            _type = type;
+
+            return ReadFromFile();
+        }
+
+        private static List<Data> ReadFromFile()
+        {
+            StreamReader reader = File.OpenText(_filePath);
             string line;
 
 
-            List<TeamResults> result = new List<TeamResults>();
-            reader.ReadLine(); //escape the first line
-            while ((line = reader.ReadLine()) != null && AdditionalVerification(line))
+            List<Data> result = new List<Data>();
+            reader.ReadLine();
+            while ((line = reader.ReadLine()) != null && AdditionalVerification(line) )
             {
-                string[] results = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                TeamResults currentTeam = new TeamResults(results[1], Int32.Parse(results[6]), Int32.Parse(results[8]));
-                result.Add(currentTeam);
-
+                string[] splitedLine = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                if (splitedLine.Length != 0 && Char.IsDigit(splitedLine[0][0]))
+                {
+                    Data element = CreateObject(splitedLine);
+                    result.Add(element);
+                }
             }
 
             return result;
         }
 
+
         public static bool AdditionalVerification(string line)
         {
-            //check the number of dashes ("-")
-            //if the dash count on a line is greater than 1 we don't take the line into account
             int dashCount = 0;
             foreach (char chr in line)
             {

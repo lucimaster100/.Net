@@ -23,7 +23,7 @@ namespace Lab2
             foreach (string line in System.IO.File.ReadLines(_filePath)) 
             {
                 counter++;
-                result = line.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+                result = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 if (result.Length != 0)
                 {
