@@ -12,7 +12,7 @@ namespace Lab2
             this._wearherInfo = parser.ParseWeatherInfo();
         }
 
-        public void printSolution()
+        public void ShowSmallesWeatherDifference()
         {
             int day, maxTemp, minTemp, day1=-1, min=Int32.MaxValue;
             

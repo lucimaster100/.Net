@@ -9,7 +9,7 @@ namespace Lab2
             SolutionOne solution1 = new SolutionOne("..\\..\\..\\Part One\\weather.dat");
             //SolutionProvider solution = new SolutionProvider("D:\\Repos\\.Net\\Lab2\\Lab2\\Part Two\\football.dat");
             SolutionProvider solution = new SolutionProvider("..\\..\\..\\Part Two\\football.dat");
-            solution1.printSolution();
+            solution1.ShowSmallesWeatherDifference();
             solution.ShowRankingByGoalDifference();
 
         }
