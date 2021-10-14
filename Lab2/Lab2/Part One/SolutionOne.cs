@@ -61,10 +61,12 @@ namespace Lab2
                 }
                     
             }
+            Console.WriteLine();
             Console.Write("day: ");
             Console.Write(day1);
             Console.Write(" spread: ");
             Console.WriteLine(min);
+            Console.WriteLine();
         }
     }
 }
