@@ -1,6 +1,7 @@
 # .Net
 
 Lab2 - Kata04 Questions
+
 To what extent did the design decisions you made when writing the original programs make it easier or harder to factor out common code?
 Faptul ca implementarea solutiei initiale era specifica pentru rezolvarea punctuala a problemei a facut ca extinderea solutiei sa fie mai dificila, nefiind deschisa generalizarii.
 
